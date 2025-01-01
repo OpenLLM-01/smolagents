@@ -4,10 +4,9 @@
 
 `smolagents` is a library that enables you to run powerful agents in a few lines of code. It offers:
 
-✨ **Simplicity**: the logic for agents fits in ~thousand lines of code (see [agents.py](https://github.com/huggingface/smolagents/blob/main/src/smolagents/agents.py)). We kept abstractions to their minimal shape above raw code!
+✨ **Simplicity**: the logic for agents fits in ~thousand lines of code (see [agents.py](https://github.com/OpenLLM-01/smolagents/blob/main/src/agent.py)). We kept abstractions to their minimal shape above raw code!
 
 🧑‍💻 **First-class support for Code Agents**, i.e. agents that write their actions in code (as opposed to "agents being used to write code").
- - On top of this [`CodeAgent`](https://huggingface.co/docs/smolagents/reference/agents#smolagents.CodeAgent) class, we still support the standard [`ToolCallingAgent`](https://huggingface.co/docs/smolagents/reference/agents#smolagents.ToolCallingAgent) that writes actions as JSON/text blobs.
 
 🤗 **Hub integrations**: you can share and load tools to/from the Hub, and more is to come!
 
