@@ -1,0 +1,24 @@
+name: Build documentation
+
+on:
+  push:
+    branches:
+      - main
+      - doc-builder*
+      - v*-release
+      - use_templates
+    paths:
+      - 'docs/source/**'
+      - 'assets/**'
+      - '.githubWorkflows/doc-build.yml'
+
+jobs:
+   build:
+    with:
+      commit_sha: ${{ github.sha }}
+      package: smolagents
+      languages: en
+      # additional_args: --not_python_module # use this arg if repository is documentation only
+    secrets:
+      token: ${{ secrets.SMOLAGENTS_PUSH }}
+      hf_token: ${{ secrets.HF_DOC_BUILD_PUSH }}
