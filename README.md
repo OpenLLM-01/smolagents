@@ -47,7 +47,7 @@ By the way, why use a framework at all? Well, because a big part of this stuff i
 
 ## How strong are open models for agentic workflows?
 
-We've created `CodeAgent`instances with some leading models, and compared them on [this benchmark](https://huggingface.co/datasets/m-ric/agents_medium_benchmark_2) that gathers questions from a few different benchmarks to propose a varied blend of challenges.
+We've created `CodeAgent`instances with some leading models, and compared them on a benchmark that gathers questions to propose a varied blend of challenges.
 
 [Find the benchmarking code here](https://github.com/OpenLLM-01/smolagents/blob/main/examples/benchmark.ipynb) for more detail on the agentic setup used, and see a comparison of using LLMs code agents compared to vanilla (spoilers: code agents works better).
 
